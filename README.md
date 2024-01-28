@@ -21,8 +21,10 @@ Công cụ được build bởi WDLF Osteup dành riêng cho trình duyệt Edge
 - NetFramework ( Nếu bị lỗi .Net khi sử dụng )
 - Chạy Quyền Admin để sử dụng Full 100% Tính năng và không lỗi
 
+# Cách Sử dụng Công cụ
+
 # Change Log 
-### V1.0
+### V1.0 [28/1//2024]
 
 - Có 6 chức năng đầu tiên:
 - AutofillCreditCardEnabled, ConfigureDoNotTrack, HubsSidebarEnabled, PaymentMethodQueryEnabled, PersonalizationReportingEnabled, UserFeedbackAllowed.
