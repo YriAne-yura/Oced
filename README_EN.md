@@ -1,8 +1,4 @@
 
-
-## <div align="center"><b><a href="README.md">Tiếng Việt</a> | <a href="README_EN.md">English</a></b></div>
-
-
 ## <div align="center"><b><a href="README.md">Vietnamese</a> | <a href="README_EN.md">English</a></b></div>
 
 # Occed
