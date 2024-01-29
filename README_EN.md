@@ -1,7 +1,7 @@
 
 ## <div align="center"><b><a href="README.md">Vietnamese</a> | <a href="README_EN.md">English</a></b></div>
 
-# Occed
+# Oced
 
 Edge browser customization tool is coded in C# language By [WDLF Osteup](https://www.youtube.com/channel/UCqnb_ntxhhG_js7OdiSGs1A)
 
