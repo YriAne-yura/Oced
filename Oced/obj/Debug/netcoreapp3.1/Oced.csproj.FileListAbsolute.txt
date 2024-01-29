@@ -1,0 +1,17 @@
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.Form1.resources
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.Properties.Resources.resources
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.csproj.GenerateResource.cache
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.AssemblyInfoInputs.cache
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.AssemblyInfo.cs
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.csproj.CoreCompileInputs.cache
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.sourcelink.json
+C:\Users\Sirocandy\source\repos\Oced\Oced\bin\Debug\netcoreapp3.1\Oced.exe
+C:\Users\Sirocandy\source\repos\Oced\Oced\bin\Debug\netcoreapp3.1\Oced.deps.json
+C:\Users\Sirocandy\source\repos\Oced\Oced\bin\Debug\netcoreapp3.1\Oced.runtimeconfig.json
+C:\Users\Sirocandy\source\repos\Oced\Oced\bin\Debug\netcoreapp3.1\Oced.runtimeconfig.dev.json
+C:\Users\Sirocandy\source\repos\Oced\Oced\bin\Debug\netcoreapp3.1\Oced.dll
+C:\Users\Sirocandy\source\repos\Oced\Oced\bin\Debug\netcoreapp3.1\Oced.pdb
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.dll
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.pdb
+C:\Users\Sirocandy\source\repos\Oced\Oced\obj\Debug\netcoreapp3.1\Oced.genruntimeconfig.cache

@@ -83,6 +83,7 @@
             pictureBox3 = new System.Windows.Forms.PictureBox();
             pictureBox2 = new System.Windows.Forms.PictureBox();
             panel5 = new System.Windows.Forms.Panel();
+            toolTip1 = new System.Windows.Forms.ToolTip(components);
             panelmove.SuspendLayout();
             panel1.SuspendLayout();
             panel12.SuspendLayout();
@@ -135,27 +136,28 @@
             // 
             // button2
             // 
+            button2.BackgroundImage = Properties.Resources.minimize;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            button2.Location = new System.Drawing.Point(734, 12);
+            button2.Location = new System.Drawing.Point(715, 2);
             button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(24, 24);
+            button2.Size = new System.Drawing.Size(40, 40);
             button2.TabIndex = 1;
-            button2.Text = "-";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // button1
             // 
+            button1.BackgroundImage = Properties.Resources.exit;
+            button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            button1.Location = new System.Drawing.Point(764, 12);
+            button1.Location = new System.Drawing.Point(757, 2);
             button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(24, 24);
+            button1.Size = new System.Drawing.Size(40, 40);
             button1.TabIndex = 0;
-            button1.Text = "X";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -167,12 +169,13 @@
             // 
             // button3
             // 
+            button3.BackColor = System.Drawing.Color.FromArgb(255, 202, 191);
             button3.Location = new System.Drawing.Point(16, 14);
             button3.Name = "button3";
             button3.Size = new System.Drawing.Size(44, 23);
             button3.TabIndex = 1;
             button3.Text = "OFF";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // panel1
@@ -203,9 +206,9 @@
             // pictureBox11
             // 
             pictureBox11.Image = (System.Drawing.Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new System.Drawing.Point(259, 14);
+            pictureBox11.Location = new System.Drawing.Point(268, 14);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new System.Drawing.Size(36, 23);
+            pictureBox11.Size = new System.Drawing.Size(27, 23);
             pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox11.TabIndex = 2;
             pictureBox11.TabStop = false;
@@ -221,12 +224,13 @@
             // 
             // button11
             // 
+            button11.BackColor = System.Drawing.Color.FromArgb(255, 202, 191);
             button11.Location = new System.Drawing.Point(16, 14);
             button11.Name = "button11";
             button11.Size = new System.Drawing.Size(44, 23);
             button11.TabIndex = 1;
             button11.Text = "OFF";
-            button11.UseVisualStyleBackColor = true;
+            button11.UseVisualStyleBackColor = false;
             button11.Click += button11_Click;
             // 
             // panel11
@@ -242,9 +246,9 @@
             // pictureBox10
             // 
             pictureBox10.Image = (System.Drawing.Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new System.Drawing.Point(259, 14);
+            pictureBox10.Location = new System.Drawing.Point(269, 14);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new System.Drawing.Size(36, 23);
+            pictureBox10.Size = new System.Drawing.Size(26, 23);
             pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox10.TabIndex = 2;
             pictureBox10.TabStop = false;
@@ -260,12 +264,13 @@
             // 
             // button10
             // 
+            button10.BackColor = System.Drawing.Color.FromArgb(255, 202, 191);
             button10.Location = new System.Drawing.Point(16, 14);
             button10.Name = "button10";
             button10.Size = new System.Drawing.Size(44, 23);
             button10.TabIndex = 1;
             button10.Text = "OFF";
-            button10.UseVisualStyleBackColor = true;
+            button10.UseVisualStyleBackColor = false;
             button10.Click += button10_Click;
             // 
             // panel10
@@ -281,9 +286,9 @@
             // pictureBox9
             // 
             pictureBox9.Image = (System.Drawing.Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new System.Drawing.Point(259, 14);
+            pictureBox9.Location = new System.Drawing.Point(268, 14);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new System.Drawing.Size(36, 23);
+            pictureBox9.Size = new System.Drawing.Size(27, 23);
             pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox9.TabIndex = 2;
             pictureBox9.TabStop = false;
@@ -299,12 +304,13 @@
             // 
             // button9
             // 
+            button9.BackColor = System.Drawing.Color.FromArgb(255, 202, 191);
             button9.Location = new System.Drawing.Point(16, 14);
             button9.Name = "button9";
             button9.Size = new System.Drawing.Size(44, 23);
             button9.TabIndex = 1;
             button9.Text = "OFF";
-            button9.UseVisualStyleBackColor = true;
+            button9.UseVisualStyleBackColor = false;
             button9.Click += button9_Click;
             // 
             // panel9
@@ -320,9 +326,9 @@
             // pictureBox8
             // 
             pictureBox8.Image = (System.Drawing.Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new System.Drawing.Point(259, 14);
+            pictureBox8.Location = new System.Drawing.Point(268, 14);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new System.Drawing.Size(36, 23);
+            pictureBox8.Size = new System.Drawing.Size(27, 23);
             pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 2;
             pictureBox8.TabStop = false;
@@ -338,12 +344,13 @@
             // 
             // button8
             // 
+            button8.BackColor = System.Drawing.Color.FromArgb(255, 202, 191);
             button8.Location = new System.Drawing.Point(16, 14);
             button8.Name = "button8";
             button8.Size = new System.Drawing.Size(44, 23);
             button8.TabIndex = 1;
             button8.Text = "OFF";
-            button8.UseVisualStyleBackColor = true;
+            button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
             // 
             // panel8
@@ -359,12 +366,13 @@
             // pictureBox7
             // 
             pictureBox7.Image = (System.Drawing.Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new System.Drawing.Point(259, 14);
+            pictureBox7.Location = new System.Drawing.Point(268, 14);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new System.Drawing.Size(36, 23);
+            pictureBox7.Size = new System.Drawing.Size(27, 23);
             pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 2;
             pictureBox7.TabStop = false;
+            pictureBox7.MouseEnter += pictureBox7_MouseMove;
             // 
             // label13
             // 
@@ -377,12 +385,13 @@
             // 
             // button7
             // 
+            button7.BackColor = System.Drawing.Color.FromArgb(255, 202, 191);
             button7.Location = new System.Drawing.Point(16, 14);
             button7.Name = "button7";
             button7.Size = new System.Drawing.Size(44, 23);
             button7.TabIndex = 1;
             button7.Text = "OFF";
-            button7.UseVisualStyleBackColor = true;
+            button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
             // panel7
@@ -399,12 +408,13 @@
             // pictureBox6
             // 
             pictureBox6.Image = (System.Drawing.Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new System.Drawing.Point(259, 14);
+            pictureBox6.Location = new System.Drawing.Point(269, 14);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new System.Drawing.Size(36, 23);
+            pictureBox6.Size = new System.Drawing.Size(26, 23);
             pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 2;
             pictureBox6.TabStop = false;
+            pictureBox6.MouseMove += pictureBox6_MouseMove;
             // 
             // label12
             // 
@@ -437,6 +447,7 @@
             button6.TabIndex = 2;
             button6.Text = "ON ALL";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button5
             // 
@@ -448,6 +459,7 @@
             button5.TabIndex = 1;
             button5.Text = "OFF ALL";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -775,5 +787,6 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

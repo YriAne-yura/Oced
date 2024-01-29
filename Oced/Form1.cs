@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Oced.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,9 +8,11 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Oced
 {
@@ -59,6 +62,12 @@ namespace Oced
                 button4.Text = "Success";
             }
 
+            CheckRegistrySettings();
+
+            if (!IsAdministrator())
+            {
+                MessageBox.Show("Yêu cầu chạy oced với quyền administrators để sử dụng 100% tính năng của công cụ", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
         private void PanelMove_MouseDown(object sender, MouseEventArgs e)
@@ -166,13 +175,6 @@ namespace Oced
             }
         }
 
-        private void checkregistry_exist(object sender, EventArgs e)
-        {
-
-            MessageBox.Show("hi", "tiêu đề");
-
-
-        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -214,17 +216,19 @@ namespace Oced
 
         private void button3_Click(object sender, EventArgs e)
         {
+
+            button3.Text = (button3.Text == "ON") ? "OFF" : "ON";
+            button3.BackColor = (button3.Text == "ON") ? Color.FromArgb(144, 254, 191) : Color.FromArgb(255, 202, 191);
+
             if (button3.Text == "ON")
             {
-                DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "AutofillCreditCardEnabled");
-                button3.BackColor = Color.FromArgb(255, 202, 191);
-                button3.Text = "OFF";
+                CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "AutofillCreditCardEnabled", 0); MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
-            else if (button3.Text == "OFF")
+            else
             {
-                CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "AutofillCreditCardEnabled", 0);
-                button3.BackColor = Color.FromArgb(144, 254, 191);
-                button3.Text = "ON";
+                DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "AutofillCreditCardEnabled"); MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
 
         }
@@ -286,49 +290,54 @@ namespace Oced
 
         private void button7_Click(object sender, EventArgs e)
         {
+
+
+            button7.Text = (button7.Text == "ON") ? "OFF" : "ON";
+            button7.BackColor = (button7.Text == "ON") ? Color.FromArgb(144, 254, 191) : Color.FromArgb(255, 202, 191);
+
             if (button7.Text == "ON")
             {
-                DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "ConfigureDoNotTrack");
-                button7.BackColor = Color.FromArgb(255, 202, 191);
-                button7.Text = "OFF";
+                CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "ConfigureDoNotTrack", 0); MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
-            else if (button7.Text == "OFF")
+            else
             {
-                CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "ConfigureDoNotTrack", 1);
-                button7.BackColor = Color.FromArgb(144, 254, 191);
-                button7.Text = "ON";
+                DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "ConfigureDoNotTrack"); MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
+            button8.Text = (button8.Text == "ON") ? "OFF" : "ON";
+            button8.BackColor = (button8.Text == "ON") ? Color.FromArgb(144, 254, 191) : Color.FromArgb(255, 202, 191);
+
             if (button8.Text == "ON")
             {
-                DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "HubsSidebarEnabled");
-                button8.BackColor = Color.FromArgb(255, 202, 191);
-                button8.Text = "OFF";
+                CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "HubsSidebarEnabled", 0); MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
-            else if (button8.Text == "OFF")
+            else
             {
-                CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "HubsSidebarEnabled", 0);
-                button8.BackColor = Color.FromArgb(144, 254, 191);
-                button8.Text = "ON";
+                DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "HubsSidebarEnabled"); MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
+            button9.Text = (button9.Text == "ON") ? "OFF" : "ON";
+            button9.BackColor = (button9.Text == "ON") ? Color.FromArgb(144, 254, 191) : Color.FromArgb(255, 202, 191);
+
             if (button9.Text == "ON")
             {
-                DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "PaymentMethodQueryEnabled");
-                button9.BackColor = Color.FromArgb(255, 202, 191);
-                button9.Text = "OFF";
+                CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "PaymentMethodQueryEnabled", 0); MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
-            else if (button8.Text == "OFF")
+            else
             {
-                CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "PaymentMethodQueryEnabled", 0);
-                button9.BackColor = Color.FromArgb(144, 254, 191);
-                button9.Text = "ON";
+                DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "PaymentMethodQueryEnabled"); MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
         }
 
@@ -340,28 +349,164 @@ namespace Oced
             if (button10.Text == "ON")
             {
                 CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "PersonalizationReportingEnabled", 0);
+                MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             else
             {
                 DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "PersonalizationReportingEnabled");
+                MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
 
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
+
+
+            button11.Text = (button11.Text == "ON") ? "OFF" : "ON";
+            button11.BackColor = (button11.Text == "ON") ? Color.FromArgb(144, 254, 191) : Color.FromArgb(255, 202, 191);
+
             if (button11.Text == "ON")
             {
-                DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "UserFeedbackAllowed");
-                button11.BackColor = Color.FromArgb(255, 202, 191);
-                button11.Text = "OFF";
-            }
-            else if (button8.Text == "OFF")
-            {
                 CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "UserFeedbackAllowed", 0);
-                button11.BackColor = Color.FromArgb(144, 254, 191);
-                button11.Text = "ON";
+                MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
+            else
+            {
+                DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "UserFeedbackAllowed");
+                MessageBox.Show("Tinh chỉnh thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+        }
+
+        // Button ON All
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ChangeAllColorButtonON();
+            ChangeAllTextButtonON();
+            ChangeAllRegON();
+            MessageBox.Show("Hoàn tất chỉnh toàn bộ tối ưu thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        // Button OFF ALL
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ChangeAllColorButtonOFF();
+            ChangeAllTextButtonOFF();
+            ChangeAllRegOFF();
+            MessageBox.Show("Hoàn tất xoá toàn bộ tối ưu thành công", "Oced", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+
+        /// <summary>
+        /// Check Registry Exist
+        /// </summary>
+        private void CheckRegistrySettings()
+        {
+            CheckButtonState(button3, "AutofillCreditCardEnabled");
+            CheckButtonState(button7, "ConfigureDoNotTrack");
+            CheckButtonState(button8, "HubsSidebarEnabled");
+            CheckButtonState(button9, "PaymentMethodQueryEnabled");
+            CheckButtonState(button10, "PersonalizationReportingEnabled");
+            CheckButtonState(button11, "UserFeedbackAllowed");
+        }
+        private void CheckButtonState(System.Windows.Forms.Button button, string keyRegistry)
+        {
+            if (Registry.CurrentUser.OpenSubKey("Software\\Policies\\Microsoft\\Edge") is RegistryKey edgeKey)
+            {
+                if (edgeKey.GetValueNames().Contains(keyRegistry))
+                {
+                    object value = edgeKey.GetValue(keyRegistry);
+                    if (value != null && value is int intValue)
+                    {
+                        button.Text = (intValue == 0) ? "ON" : "OFF";
+                        button.BackColor = (intValue == 0) ? Color.FromArgb(144, 254, 191) : Color.FromArgb(255, 202, 191);
+                    }
+                }
+            }
+        }
+
+
+
+
+        /// <summary>
+        /// This is Setting List Optimize or Add other bla bla
+        /// </summary>
+        private void ChangeAllColorButtonON()
+        {
+            button3.BackColor = Color.FromArgb(144, 254, 191);
+            button7.BackColor = Color.FromArgb(144, 254, 191);
+            button8.BackColor = Color.FromArgb(144, 254, 191);
+            button9.BackColor = Color.FromArgb(144, 254, 191);
+            button10.BackColor = Color.FromArgb(144, 254, 191);
+            button11.BackColor = Color.FromArgb(144, 254, 191);
+        }
+        private void ChangeAllTextButtonON()
+        {
+            button3.Text = "ON";
+            button7.Text = "ON";
+            button8.Text = "ON";
+            button9.Text = "ON";
+            button10.Text = "ON";
+            button11.Text = "ON";
+        }
+        private void ChangeAllRegON()
+        {
+            CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "AutofillCreditCardEnabled", 0);
+            CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "ConfigureDoNotTrack", 0);
+            CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "HubsSidebarEnabled", 0);
+            CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "PaymentMethodQueryEnabled", 0);
+            CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "PersonalizationReportingEnabled", 0);
+            CreateDwordKey("Software\\Policies\\Microsoft\\Edge", "UserFeedbackAllowed", 0);
+
+        }
+        private void ChangeAllRegOFF()
+        {
+            DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "AutofillCreditCardEnabled");
+            DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "ConfigureDoNotTrack");
+            DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "HubsSidebarEnabled");
+            DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "PaymentMethodQueryEnabled");
+            DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "PersonalizationReportingEnabled");
+            DeleteDwordKey("Software\\Policies\\Microsoft\\Edge", "UserFeedbackAllowed");
+
+        }
+        private void ChangeAllColorButtonOFF()
+        {
+            button3.BackColor = Color.FromArgb(255, 202, 191);
+            button7.BackColor = Color.FromArgb(255, 202, 191);
+            button8.BackColor = Color.FromArgb(255, 202, 191);
+            button9.BackColor = Color.FromArgb(255, 202, 191);
+            button10.BackColor = Color.FromArgb(255, 202, 191);
+            button11.BackColor = Color.FromArgb(255, 202, 191);
+        }
+        private void ChangeAllTextButtonOFF()
+        {
+            button3.Text = "OFF";
+            button7.Text = "OFF";
+            button8.Text = "OFF";
+            button9.Text = "OFF";
+            button10.Text = "OFF";
+            button11.Text = "OFF";
+        }
+
+        static bool IsAdministrator()
+        {
+            WindowsIdentity identity = WindowsIdentity.GetCurrent();
+            WindowsPrincipal principal = new WindowsPrincipal(identity);
+            return principal.IsInRole(WindowsBuiltInRole.Administrator);
+        }
+
+        private void pictureBox6_MouseMove(object sender, MouseEventArgs e)
+        {
+            toolTip1.Show("Cài đặt để bật hoặc tắt tự động điền thông tin thẻ tín dụng \n trong một phần thanh toán bất kì nào đó.", pictureBox6);
+        }
+
+        private void pictureBox7_MouseMove(object sender, EventArgs e)
+        {
+            toolTip1.Show("\"Do Not Track,\" thường được sử dụng để yêu cầu ứng dụng web hoặc trang web \n không theo dõi hoạt động của người dùng.", pictureBox7);
         }
     }
 }
