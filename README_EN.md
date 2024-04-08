@@ -5,7 +5,7 @@
 
 Edge browser customization written in C# language by [WDLF Osteup](https://www.youtube.com/channel/UCqnb_ntxhhG_js7OdiSGs1A)
 
-Does absolutely nothing because Chromium can be configured within Chromium flags/lauch options
+Does absolutely nothing because Chromium can be configured within Chromium flags/launch options
 
 # Function
 - ~~In-depth browser customization.~~
