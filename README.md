@@ -5,11 +5,13 @@ Công cụ tuỳ chỉnh trình duyệt Edge viết bằng ngôn ngữ C# bởi 
 
 Một ứng dụng vô dụng nếu bạn biết Chromium hoạt động như thế nào
 
+![image](https://github.com/SiroCandy06/Oced/assets/101639160/f2f3e79e-9244-453e-b8f8-bd2bde37b6cd)
+
 # Tác dụng
-- Tuỳ chỉnh trình duyệt chuyên sâu.
+- Tuỳ chỉnh trình duyệt
 - Vô hiệu hoá bớt các tính năng không cần thiết.
-- Giảm lag / Tăng độ mượt của Edge khi lướt FB, Xem youtube hoặc lướt web.
-- Đơn giản và dễ sử dụng
+- Giảm lag Edge
+- Đơn giản, dễ sử dụng
 
 # Cách cài đặt và sử dụng
 Tải trong đây: [Oced_Download](https://github.com/SiroCandy06/Oced/releases)
