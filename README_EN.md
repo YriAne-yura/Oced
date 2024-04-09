@@ -3,39 +3,27 @@
 
 # Oced
 
-Edge browser customization tool is coded in C# language By [WDLF Osteup](https://www.youtube.com/channel/UCqnb_ntxhhG_js7OdiSGs1A)
+Edge browser customization written in C# language by [WDLF Osteup](https://www.youtube.com/channel/UCqnb_ntxhhG_js7OdiSGs1A)
 
-Allows users to enable/disable strict/unavailable features on Edge browser.
-
-Optimizing Edge and reducing lag depends on user customization to serve user needs
+Does absolutely nothing because Chromium can be configured within Chromium flags/launch options
 
 # Function
-- In-depth browser customization.
-- Disable unnecessary features.
-- Reduce lag / Increase Edge smoothness when surfing Facebook, Watching YouTube or surfing the web.
-- Simple and easy to use.
+- ~~In-depth browser customization.~~
+- ~~Disable unnecessary features.~~
+- ~~Reduce lag / Increase Edge smoothness when surfing Facebook, Watching YouTube or surfing the web.~~
+- ~~Simple and easy to use.~~
+- Does absolutely nothing
+- Does extraordinary nothing
+- Waste your time and internet data
 
 # Required to be usable
-- Suitable for all devices and only needs a computer to use.
-- Run administrators to use 100% of the tool's functions.
+- A 20 years old laptop from your parents
+- Fifth grade braincells
 
 # How to install and use
 Download here: [Oced_Download](https://github.com/SiroCandy06/Oced/releases)
 
-Download the zip file and extract it, then run the Oced.exe file. Note that you must run with administrator rights to use the tool. If run normally, it will display the following table:
-
-![image](https://github.com/SiroCandy06/Oced/assets/101639160/3488e541-937c-4951-9443-627a3bf5a979)
-
-
-Run as administrators and use as normal :D
-
-![image](https://github.com/SiroCandy06/Oced/assets/101639160/20e161e5-3d31-4c84-aa75-8b5bc749cf65)
-
-
-If you are unclear about the functions, please hover over the icon (!) to read more details about that function!
-
-![image](https://github.com/SiroCandy06/Oced/assets/101639160/46a3d527-39b9-4668-ad83-8a5aa45cf538)
-
+Download the zip file and extract it, then run the Oced.exe file. Enjoy the half-baked UI with absolutely non-functional optimizations.
 
 
 # Version information
