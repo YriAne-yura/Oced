@@ -12,9 +12,6 @@ Một ứng dụng vô dụng nếu bạn biết Chromium hoạt động như th
 - Giảm lag / Tăng độ mượt của Edge khi lướt FB, Xem youtube hoặc lướt web.
 - Đơn giản và dễ sử dụng
 
-# Yêu cầu để sử dụng được
-- Máy tính 20 tuổi của gia đình bạn
-
 # Cách cài đặt và sử dụng
 Tải trong đây: [Oced_Download](https://github.com/SiroCandy06/Oced/releases)
 
