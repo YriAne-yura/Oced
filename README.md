@@ -1,5 +1,4 @@
-## <div align="center"><b><a href="README.md">Tiếng Việt</a> | <a href="README_EN.md">English</a></b></div>
-
+## <div align="center"><b><a href="README.md">Tiếng Việt</a>
 # Oced
 
 Công cụ tuỳ chỉnh trình duyệt Edge viết bằng ngôn ngữ C# bởi [WDLF Osteup](https://www.youtube.com/channel/UCqnb_ntxhhG_js7OdiSGs1A)
